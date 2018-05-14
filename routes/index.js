@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
   res.render('index', {items});
 });
 
-router.get('/items/create', async (req, res) => {
+router.get('/items/create', (req, res) => {
   res.render('create');
 });
 
